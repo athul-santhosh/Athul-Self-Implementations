@@ -4,7 +4,6 @@ class Node:
 		self.data = data
 		self.next = None
 
-
 class LinkedList:
 
 	def __init__(self):
@@ -37,15 +36,11 @@ class LinkedList:
 			cur = temp
 		self.head = prev
 
-
-
-
-
 	def sumTwo(self,ListToADD): 
 								                               # self is the current list, ListToADD is the List to be 
 															   # added with the list
- 		self.reverse()
- 		ListToADD.reverse()
+ 		#self.reverse()											# uncheck the #code to add the list in exact order
+ 		#ListToADD.reverse()
 
 
  		l1 = self.head
@@ -64,7 +59,7 @@ class LinkedList:
 
  			l3.append(value % 10)
  			value = value // 10
- 		l3.reverse()
+ 		#l3.reverse()
  		l3.display()
 
  			
